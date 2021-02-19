@@ -1,0 +1,21 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main
+{
+  height: calc(100vh - 80px);
+  width: calc(100vw - 200px);
+  background: #2b355e;
+  overflow-y: auto;
+}
+
+.sidebar
+{
+  background: #244a24;
+  width: 200px;
+  height: calc(100vh - 80px);
+}
