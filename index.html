@@ -10,17 +10,165 @@
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
     <!-- link al mio css -->
-    <link rel="stylesheet" href="assets/css/master.css">
+    <link rel="stylesheet" href="./assets/css/master.css">
 
   </head>
 
   <body>
-    <div class="sidebar">
+    <aside>
+      <div class="logo">
+        <img src="./assets/img/icon/logo.png" alt="">
+      </div>
 
-    </div>
+      <div class="menu-sidebar">
+        <ul>
+          <li>
+            <div class="section-sidebar">
+              <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="currentColor">
+                </path>
+              </svg>
+              <span>Home</span>
+            </div>
+          </li>
+
+          <li>
+            <div class="section-sidebar">
+              <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M357.079 341.334l94.476 110.73-32.508 27.683-94.222-110.476q-45.714 30.476-100.826 30.476-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 23.365-5.841 45.714t-16.635 41.651-25.778 35.555zM224 357.079q28.19 0 53.841-11.048t44.19-29.587 29.587-44.19 11.048-53.841-11.048-53.841-29.587-44.191-44.19-29.587-53.841-11.047-53.841 11.047-44.191 29.588-29.587 44.19-11.047 53.841 11.047 53.841 29.588 44.19 44.19 29.587 53.841 11.048z" fill="currentColor">
+                </path>
+              </svg>
+              <span>Search</span>
+            </div>
+          </li>
+
+          <li>
+            <div class="section-sidebar">
+              <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M311.873 77.46l166.349 373.587-39.111 17.27-166.349-373.587zM64 463.746v-384h42.666v384h-42.666zM170.667 463.746v-384h42.667v384h-42.666z" fill="currentColor">
+                </path>
+              </svg>
+              <span>Library</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="playlist-sidebar mt-20">
+        <h4 class="text-uppercase">playlist</h4>
+        <div class="new-playlist-sidebar mt-10">
+          <div class="square">
+            <i class="fas fa-plus"></i>
+          </div>
+          <span>Crea Playlist</span>
+
+        </div>
+
+        <div class="name-playlist-sidebar mt-10">
+          <ul>
+            <li>Nome playlist</li>
+            <li>Nome playlist</li>
+            <li>Nome playlist</li>
+            <li>Nome playlist</li>
+            <li>Nome playlist</li>
+          </ul>
+        </div>
+      </div>
+
+
+      </div>
+    </aside>
 
     <main>
+      <div class="topbar">
+        <button class="btn-topbar text-uppercase">effettua upgrade</button>
+      </div>
+
+      <div class="navbar-main text-uppercase mt-20">
+        <ul>
+          <li>in evidenza</li>
+          <li>podcast</li>
+          <li>classifiche</li>
+          <li>generi e mood</li>
+          <li>nuove uscite</li>
+          <li>scopri</li>
+        </ul>
+      </div>
+
+      <div class="playlist-group-main mt-40">
+        <h2>Recently played</h2>
+
+        <div class="playlist-row-main mt-20">
+          <div class="playlist-main">
+            <div id="img-1" class="playlist-photo-main"></div>
+
+            <h4 class="playlist-title-main">Buongiorno così</h4>
+            <span class="playlist-artist-main">Mecna</span>
+          </div>
+
+          <div class="playlist-main">
+            <div id="img-1" class="playlist-photo-main"></div>
+
+            <h4 class="playlist-title-main">Buongiorno così</h4>
+            <span class="playlist-artist-main">Mecna</span>
+          </div>
+
+          <div class="playlist-main">
+            <div id="img-1" class="playlist-photo-main"></div>
+
+            <h4 class="playlist-title-main">Buongiorno così</h4>
+            <span class="playlist-artist-main">Mecna</span>
+          </div>
+
+          <div class="playlist-main">
+            <div id="img-1" class="playlist-photo-main"></div>
+
+            <h4 class="playlist-title-main">Buongiorno così</h4>
+            <span class="playlist-artist-main">Mecna</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="playlist-group-main mt-40">
+        <h2>Creato per Emanuele Attinà</h2>
+
+        <div class="playlist-row-main mt-20">
+          <div class="playlist-main">
+            <div id="img-1" class="playlist-photo-main"></div>
+
+            <h4 class="playlist-title-main">Buongiorno così</h4>
+            <span class="playlist-artist-main">Mecna</span>
+          </div>
+
+          <div class="playlist-main">
+            <div id="img-1" class="playlist-photo-main"></div>
+
+            <h4 class="playlist-title-main">Buongiorno così</h4>
+            <span class="playlist-artist-main">Mecna</span>
+          </div>
+
+          <div class="playlist-main">
+            <div id="img-1" class="playlist-photo-main"></div>
+
+            <h4 class="playlist-title-main">Buongiorno così</h4>
+            <span class="playlist-artist-main">Mecna</span>
+          </div>
+
+          <div class="playlist-main">
+            <div id="img-1" class="playlist-photo-main"></div>
+
+            <h4 class="playlist-title-main">Buongiorno così</h4>
+            <span class="playlist-artist-main">Mecna</span>
+          </div>
+
+        </div>
+      </div>
 
     </main>
 
