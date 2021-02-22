@@ -47,6 +47,9 @@ aside
   height: calc(100vh - 80px);
   position: absolute;
   padding: 20px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .logo img
@@ -62,8 +65,8 @@ aside
 
 .sidebar-content
 {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 .menu-sidebar
@@ -163,7 +166,7 @@ aside
 
 .bottom-sidebar
 {
-
+  margin-top: auto;
 }
 
 .bottom-sidebar hr
@@ -322,7 +325,53 @@ footer
   background: #282828;
   width: 100vw;
   position: fixed;
+  display: flex;
+  padding: 15px 15px;
 }
+
+.footer-left
+{
+  display: flex;
+  align-items: center;
+}
+
+.footer-left img
+{
+  height: 50px;
+}
+
+.footer-text
+{
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  margin-left: 15px;
+  margin-right: 25px;
+}
+
+.footer-text h4
+{
+  color: #fff;
+}
+
+.footer-text span
+{
+  color: #878787;
+  font-size: 0.9em;
+}
+
+.footer-left svg
+{
+  color: #878787;
+  margin-right: 7px;
+}
+
+.footer-left .footer-text
+{
+  display: inline-block;
+}
+
+
 
 @media all and (max-width: 600px)
 {
