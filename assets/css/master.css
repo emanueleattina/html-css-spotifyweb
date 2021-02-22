@@ -60,6 +60,12 @@ aside
   position: absolute;
 }
 
+.sidebar-content
+{
+  display: flex;
+  flex-direction: column;
+}
+
 .menu-sidebar
 {
   margin-top: 20px;
@@ -157,9 +163,7 @@ aside
 
 .bottom-sidebar
 {
-  position: absolute;
-  bottom: 0;
-  padding-bottom: 15px;
+
 }
 
 .bottom-sidebar hr
@@ -275,6 +279,8 @@ main
 {
   display: inline-block;
   text-align: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .playlist-photo-main
@@ -366,5 +372,10 @@ footer
   .section-sidebar
   {
     text-align: center;
+  }
+
+  .bottom-sidebar
+  {
+    visibility: collapse;
   }
 }
