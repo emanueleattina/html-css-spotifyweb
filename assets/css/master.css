@@ -333,6 +333,7 @@ footer
 {
   display: flex;
   align-items: center;
+  width: 30%;
 }
 
 .footer-left img
@@ -369,6 +370,44 @@ footer
 .footer-left .footer-text
 {
   display: inline-block;
+}
+
+.footer-center
+{
+  width: 40%;
+}
+
+.buttons
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btn
+{
+  background: none;
+  border: none;
+  color: #fff;
+  margin-left: 5px;
+  margin-right: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-start
+{
+  background: #fff;
+  color: #000;
+  height: 30px;
+  width: 30px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
