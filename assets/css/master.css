@@ -42,6 +42,8 @@ body
 
 /* ---------------------------------------- */
 
+/* INIZIO SIDEBAR */
+
 aside
 {
   background: #000;
@@ -50,8 +52,8 @@ aside
   position: absolute;
   padding: 20px;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo img
@@ -65,12 +67,6 @@ aside
   position: absolute;
 }
 
-.sidebar-content
-{
-  /* display: flex;
-  flex-direction: column; */
-}
-
 .menu-sidebar
 {
   margin-top: 20px;
@@ -79,6 +75,7 @@ aside
 .menu-sidebar ul
 {
   list-style: none;
+  margin-left: -20px;
 }
 
 .menu-sidebar ul li
@@ -87,11 +84,17 @@ aside
   padding: 5px 0;
 }
 
+.section-sidebar
+{
+  margin-left: 23px;
+}
+
 .section-sidebar svg
 {
   height: 30px;
   width: 30px;
   vertical-align: middle;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .section-sidebar span
@@ -99,6 +102,18 @@ aside
   vertical-align: middle;
   font-weight: 500;
   margin-left: 5px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.section-sidebar:hover
+{
+  color: #fff;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.menu-sidebar .active
+{
+  border-left: 3px solid #1DB954;
 }
 
 .playlist-sidebar
@@ -120,6 +135,7 @@ aside
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .square .fas
@@ -132,6 +148,7 @@ aside
 {
   display: flex;
   align-items: center;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .new-playlist-sidebar span
@@ -149,11 +166,39 @@ aside
 {
   padding: 5px 0;
   font-weight: 500;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.name-playlist-sidebar ul li:hover
+{
+  color: #fff;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.new-playlist-sidebar:hover,
+.new-playlist-sidebar.square:hover
+{
+  color: #fff;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.new-playlist-sidebar .square:hover,
+.new-playlist-sidebar:hover .square
+{
+  background: #fff;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .install-app
 {
   color: #878787;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.install-app:hover
+{
+  color: #fff;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .install-app svg
@@ -199,11 +244,11 @@ aside
   color: #fff;
 }
 
+/* FINE SIDEBAR */
 
 
 
-
-/* ---------------------------------------- */
+/* INIZIO MAIN */
 
 main
 {
@@ -224,6 +269,7 @@ main
   align-items: center;
   padding-right: 30px;
   position: fixed;
+  z-index: 5;
 }
 
 .main-content
@@ -239,6 +285,18 @@ main
   padding: 13px 50px;
   color: #fff;
   font-weight: 600;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-topbar:hover
+{
+  background: #fff;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  padding: 13px 50px;
+  color: #141922;
+  font-weight: 600;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .navbar-main
@@ -262,6 +320,20 @@ main
 {
   padding: 0 10px;
   margin-bottom: 10px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.navbar-main ul li:hover
+{
+  color: #fff;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.navbar-main li.active
+{
+  border-bottom: 3px solid #1DB954;
+  border-radius: 3px;
+  padding-bottom: 5px;
 }
 
 .playlist-row-main
@@ -296,12 +368,51 @@ main
 {
   padding-top: 100%;
   width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 #img-1
 {
   background-image: url('../img/playlist/pl-1.jpeg');
   background-size: cover;
+}
+
+.overlay
+{
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  top:0;
+  left:0;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.15s ease-in-out, opacity 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.overlay svg
+{
+  background: none;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.15s ease-in-out, opacity 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.overlay:hover
+{
+  opacity: 1;
+  transition: color 0.15s ease-in-out, opacity 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .playlist-title-main
@@ -316,6 +427,11 @@ main
   color: #878787;
 }
 
+.playlist-title-main:hover, .playlist-artist-main:hover
+{
+  text-decoration: underline;
+}
+
 #art-1
 {
   background-image: url('../img/playlist/art-1.jpeg');
@@ -323,7 +439,9 @@ main
   border-radius: 50%;
 }
 
-/* ---------------------------------------- */
+/* FINE MAIN */
+
+/* INIZIO FOOTER */
 
 footer
 {
@@ -333,6 +451,7 @@ footer
   position: fixed;
   display: flex;
   padding: 15px 15px;
+  z-index: 5;
 }
 
 .footer-left
@@ -367,10 +486,22 @@ footer
   font-size: 0.9em;
 }
 
+.footer-text span:hover
+{
+  color: #878787;
+  font-size: 0.9em;
+  text-decoration: underline;
+}
+
 .footer-left svg
 {
   color: #878787;
   margin-right: 12px;
+}
+
+.footer-left svg:hover
+{
+  color: #fff;
 }
 
 .footer-left .footer-text
@@ -401,13 +532,21 @@ footer
   background: none;
   border: none;
   color: #fff;
+  opacity: 0.75;
   margin-left: 10px;
   margin-right: 10px;
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center;-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
+.btn:hover
+{
+  opacity: 1;
+}
+
+
 
 .btn-start
 {
@@ -417,9 +556,18 @@ footer
   width: 30px;
   border: 2px solid #fff;
   border-radius: 50%;
+  opacity: 1;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-start:hover
+{
+  background: #fff;
+  color: #000;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .time
@@ -435,8 +583,6 @@ footer
   color: #fff;
   font-size: 0.85em;
 }
-
-
 
 /* SLIDER */
 
@@ -463,7 +609,7 @@ footer
 
 .slider:hover
 {
-  background: #1DB954;
+  background: #878787;
 }
 
 .slider::-webkit-slider-thumb
@@ -502,6 +648,11 @@ footer
   color: #fff;
 }
 
+.footer-right svg:hover
+{
+  color: #878787;
+}
+
 .slidecontainer-volume
 {
   display: flex;
@@ -525,28 +676,60 @@ footer
 
 .slider-volume:hover
 {
-  background: #1DB954;
+  background: #878787;
 }
 
-.slider-volume::-webkit-slider-thumb
-{
-  -webkit-appearance: none;
-  appearance: none;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #fff;
-  cursor: pointer;
-}
 
-.slider-volume::-moz-range-thumb
+
+/* .......... */
+
+@media screen and (-webkit-min-device-pixel-ratio:0)
 {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #fff;
-  cursor: pointer;
+  input[type='range']
+  {
+    overflow: hidden;
+    width: 100%;
+    -webkit-appearance: none;
+    background-color: #434343;
+    align-items: center;
+  }
+
+  input[type='range']::-webkit-slider-runnable-track
+  {
+    height: 10px;
+    -webkit-appearance: none;
+    color: #13bba4;
+    margin-top: -1px;
+  }
+
+  input[type='range']::-webkit-slider-thumb
+  {
+    width: 10px;
+    -webkit-appearance: none;
+    height: 10px;
+    cursor: ew-resize;
+    box-shadow: -700px 0 0 700px #1DB954;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+  }
+
 }
+/** FF/
+input[type="range"]::-moz-range-progress {
+  background-color: #43e5f7; 
+}
+input[type="range"]::-moz-range-track {
+  background-color: #9a905d;
+}
+/ IE*/
+input[type="range"]::-ms-fill-lower {
+  background-color: #43e5f7; 
+}
+input[type="range"]::-ms-fill-upper {
+  background-color: #9a905d;
+}
+/* FINE FOOTER */
 
 /* LG */
 
@@ -554,11 +737,6 @@ footer
 {
   .playlist-main
   {
-    /* display: inline-block;
-    text-align: center;
-    margin-right: 10px;
-    margin-bottom: 10px; */
-
     width: calc(100% / 8 - 10px);
     height: auto;
     margin: 5px;
@@ -571,11 +749,6 @@ footer
 {
   .playlist-main
   {
-    /* display: inline-block;
-    text-align: center;
-    margin-right: 10px;
-    margin-bottom: 10px; */
-
     width: calc(100% / 6 - 10px);
     height: auto;
     margin: 5px;
@@ -586,11 +759,6 @@ footer
 {
   .playlist-main
   {
-    /* display: inline-block;
-    text-align: center;
-    margin-right: 10px;
-    margin-bottom: 10px; */
-
     width: calc(100% / 4 - 10px);
     height: auto;
     margin: 5px;
@@ -603,11 +771,6 @@ footer
 {
   .playlist-main
   {
-    /* display: inline-block;
-    text-align: center;
-    margin-right: 10px;
-    margin-bottom: 10px; */
-
     width: calc(100% / 2 - 10px);
     height: auto;
     margin: 5px;
@@ -666,20 +829,71 @@ footer
     text-align: center;
   }
 
-  .bottom-sidebar
+  .bottom-sidebar span, .bottom-sidebar h4
+  {
+    display: none;
+  }
+
+  .bottom-sidebar svg
+  {
+    height: 20px;
+  }
+
+  .bottom-sidebar hr
   {
     visibility: collapse;
   }
 
+  .bottom-sidebar .install-app, .bottom-sidebar .profile
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
   .playlist-main
   {
-    /* display: inline-block;
-    text-align: center;
-    margin-right: 10px;
-    margin-bottom: 10px; */
-
     width: calc(100% / 2 - 10px);
     height: auto;
     margin: 5px;
+  }
+
+  .footer-text h4, .footer-text span
+  {
+    font-size: 0.7em;
+  }
+
+  .footer-text span:hover
+  {
+    font-size: 0.7em;
+  }
+
+  .slidecontainer-volume
+  {
+    visibility: collapse;
+  }
+
+  .footer-left
+  {
+    width: 30%;
+    display: flex;
+  }
+
+  .footer-center
+  {
+    width: 60%;
+  }
+
+  .footer-right
+  {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+  }
+
+  .footer-right svg
+  {
+    padding: 2px 0;
   }
 }
